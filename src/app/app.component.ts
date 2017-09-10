@@ -1,6 +1,11 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 
+export interface Route {
+  label: string;
+  routerLink: string;
+}
+
 @Component({
   animations: [
     trigger('titleAnimation', [
@@ -16,10 +21,18 @@ import { Component } from '@angular/core';
       ])
     ])
   ],
-  selector: 'app-root',
+  selector: 'sam-root',
   styleUrls: ['./app.component.scss'],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'app';
+  public routes: Route[] = [
+    { label: 'RSVP', routerLink: 'rsvp' },
+    { label: 'Gift List', routerLink: 'rsvp' },
+    { label: 'Transport', routerLink: 'rsvp' },
+    { label: 'Accomodation', routerLink: 'rsvp' },
+    { label: 'Friday', routerLink: 'rsvp' },
+    { label: 'Saturday', routerLink: 'rsvp' },
+    { label: 'Venue', routerLink: 'rsvp' },
+  ];
 }
