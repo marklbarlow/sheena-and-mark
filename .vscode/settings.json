@@ -1,0 +1,21 @@
+{
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "typescriptHero.codeOutline.enabled": false,
+    "editor.autoIndent": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "dist": true,
+        ".editorconfig": true,
+        ".firebaserc": true,
+        ".gitignore": true,
+        ".travis.yml": true,
+        "coverage": true,
+        "firebase.json": true,
+        "node_modules": true
+    }
+}
