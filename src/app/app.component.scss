@@ -1,22 +1,29 @@
+.top-nav-collapse {
+    background-color: #78909c !important; 
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    } 
+}
 h1 {
-    font-size: 65px;
-    color: #C0B283;
+    letter-spacing: 8px;
 }
-
-h2 {
-    font-size: 50px;
-    font-weight: normal;
-    color: #591E23;
+h5 {
+    letter-spacing: 3px;
 }
-
-a {
-    padding: 10px;
-    font-size: 30px;
-    text-decoration: none;
-    color: #C0B283;
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
 }
-
-.container {
-    height: 100%;
-    background-color: #F4F4F4;
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px; 
+    } 
 }

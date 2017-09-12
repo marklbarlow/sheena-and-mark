@@ -1,15 +1,47 @@
-<!-- <div fxLayout="column" fxLayoutAlign="center center" class="container">
-  <h1 @titleAnimation>Sheena &amp; Mark</h1>
-  <h2 @subtitleAnimation>Coming soon...</h2>
-</div> -->
+<!--Main Navigation-->
+<header>
 
-<div fxLayout="column" fxLayoutAlign="center center" class="container">
-  <h1 @titleAnimation>Sheena &amp; Mark</h1>
-  <h2>20th &amp; 21st April 2018</h2>
-  <div fxLayout="row">
-    <div fxLayout="column" fxFlexFill>
-      <a *ngFor="let route of routes" routerLink="/{{route.routerLink}}">{{route.label}}</a>
+  <!--Navbar-->
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <!-- <logo>
+          <a class="logo navbar-brand waves-light" mdbRippleRadius href="#"><strong>Sheena & Mark</strong></a>
+      </logo>
+      <links>
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active waves-light" mdbRippleRadius>
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item waves-light" mdbRippleRadius>
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item waves-light" mdbRippleRadius>
+                  <a class="nav-link" href="#">Admin</a>
+              </li>
+          </ul>
+          <form class="form-inline waves-light" mdbRippleRadius>
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </form>
+      </links> -->
+  </mdb-navbar>
+
+  <!-- Intro Section -->
+  <div class="view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/wedding-background.jpg);">
+    <div class="full-bg-img">
+      <div class="container flex-center">
+        <div class="row pt-5 mt-3">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h1 class="h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Sheena & Mark</strong></h1>
+              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>20th & 21st April 2018</strong></h5>
+              <a class="btn btn-outline-white wow fadeInDown waves-light" data-wow-delay="0.4s" mdbRippleRadius>SAVE THE DATE</a>
+              <!-- <a class="btn btn-outline-white wow fadeInDown waves-light" data-wow-delay="0.4s" mdbRippleRadius>About me</a>  -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <router-outlet></router-outlet>
   </div>
-</div>
+
+</header>
+<!--Main Navigation-->

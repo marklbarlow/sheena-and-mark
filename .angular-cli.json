@@ -19,7 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/font-awesome/scss/font-awesome.scss",        
+        "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",        
+        "../node_modules/angular-bootstrap-md/scss/mdb-free.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
