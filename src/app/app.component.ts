@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { WOW } from 'wowjs/dist/wow.min';
 
 export interface Route {
   label: string;
@@ -25,7 +26,7 @@ export interface Route {
   styleUrls: ['./app.component.scss'],
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   public routes: Route[] = [
     { label: 'RSVP', routerLink: 'rsvp' },
     { label: 'Gift List', routerLink: 'rsvp' },
@@ -35,4 +36,8 @@ export class AppComponent {
     { label: 'Saturday', routerLink: 'rsvp' },
     { label: 'Venue', routerLink: 'rsvp' },
   ];
+
+  ngAfterViewInit(): void {
+    new WOW().init();
+  }
 }
