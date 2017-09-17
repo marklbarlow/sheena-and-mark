@@ -11,3 +11,7 @@ export class RouterLinkStubDirective {
 // tslint:disable-next-line:component-selector
 @Component({ selector: 'router-outlet', template: '' })
 export class RouterOutletStubComponent { }
+
+// tslint:disable-next-line:component-selector
+@Component({ selector: 'mdb-navbar', template: '' })
+export class MdbNavBarStubComponent { }

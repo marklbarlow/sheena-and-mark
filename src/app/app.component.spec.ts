@@ -1,6 +1,6 @@
 import { async, TestBed } from '@angular/core/testing';
 
-import { RouterLinkStubDirective, RouterOutletStubComponent } from '../testing/stubs';
+import { MdbNavBarStubComponent, RouterLinkStubDirective, RouterOutletStubComponent } from '../testing/stubs';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -8,6 +8,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
+        MdbNavBarStubComponent,
         RouterLinkStubDirective,
         RouterOutletStubComponent,
       ],
