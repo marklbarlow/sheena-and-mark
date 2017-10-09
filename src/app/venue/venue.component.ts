@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sam-venue',
+  styleUrls: ['./venue.component.scss'],
   templateUrl: './venue.component.html',
-  styleUrls: ['./venue.component.scss']
 })
 export class VenueComponent implements OnInit {
 
