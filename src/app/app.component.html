@@ -3,47 +3,77 @@
 
   <!--Navbar-->
   <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <!-- <logo>
-          <a class="logo navbar-brand waves-light" mdbRippleRadius href="#"><strong>Sheena & Mark</strong></a>
-      </logo>
-      <links>
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active waves-light" mdbRippleRadius>
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item waves-light" mdbRippleRadius>
-                  <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item waves-light" mdbRippleRadius>
-                  <a class="nav-link" href="#">Admin</a>
-              </li>
-          </ul>
-          <form class="form-inline waves-light" mdbRippleRadius>
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          </form>
-      </links> -->
+    <logo>
+      <a class="logo navbar-brand waves-light" mdbRippleRadius href="#">
+        <strong>sheenaandmark.com</strong>
+      </a>
+    </logo>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" href="#sagai">Sagai</a>
+        </li>
+      </ul>
+    </links>
   </mdb-navbar>
 
   <!-- Intro Section -->
-  <div class="view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/wedding-background.jpg);">
+  <div class="view hm-black-light jarallax" data-speed="0.2" style="background-image: url(assets/wedding-background.jpg);">
     <div class="full-bg-img">
       <div class="container flex-center">
         <div class="row pt-5 mt-3">
           <div class="col-md-12">
             <div class="text-center">
-              <h1 class="h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Sheena & Mark</strong></h1>
+              <h1 class="h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s">
+                <strong>Sheena & Mark</strong>
+              </h1>
               <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>20th & 21st April 2018</strong></h5>
-              <h3 class="h3-reponsive white-text font-up mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>SAVE THE DATE</strong></h3>
-              <!-- <a class="btn btn-outline-white wow fadeInDown waves-light" data-wow-delay="0.4s" mdbRippleRadius>SAVE THE DATE</a> -->
+              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
+                <strong>20th & 21st April 2018</strong>
+              </h5>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </header>
 <!--Main Navigation-->
 
-<router-outlet></router-outlet>
+<main>
+  <section id="sagai" class="section text-center sagai">
+    <h2 class="font-bold py-3 mb-3">Sagai</h2>
+
+    <div class="card card-cascade wider map-card">
+      <div class="view overlay hm-white-slight">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" [style.height]="'300px'">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+
+      <div class="card-body text-center">
+        <h4 class="card-title">
+          <strong>Saturday 20th January 2018</strong>
+        </h4>
+        <h5 class="indigo-text">
+          <strong>Kanchans Banqueting Suite</strong>
+        </h5>
+        <p class="card-text">53-55 Perth Road
+          <br>Gants Hill
+          <br>Ilford IG2 6BX</p>
+
+        <span class="card-text">11am - 3pm</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section>
+      <h2 class="font-bold py-3 mb-3">Countdown</h2>
+      <sam-countdown></sam-countdown>
+  </section> -->
+</main>
+
+<!-- <router-outlet></router-outlet> -->

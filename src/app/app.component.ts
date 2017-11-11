@@ -37,6 +37,9 @@ export class AppComponent implements AfterViewInit {
     { label: 'Venue', routerLink: 'rsvp' },
   ];
 
+  public lat = 51.5762109;
+  public lng = 0.0649442;
+
   ngAfterViewInit(): void {
     new WOW().init();
   }

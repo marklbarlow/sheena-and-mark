@@ -1,3 +1,4 @@
+import { AgmCoreModule } from '@agm/core';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,6 +28,9 @@ const routes: Routes = [
     HomeComponent,
   ],
   imports: [
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB2QZSULp0gtwjkXijqYtQl0gfhODD2Cnw',
+    }),
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
