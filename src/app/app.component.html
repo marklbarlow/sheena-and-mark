@@ -10,29 +10,8 @@
     </logo>
     <links>
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#sagai">Sagai</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#venue">Venue</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#friday">Friday</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#saturday">Saturday</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#accommodation">Accommodation</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#transport">Transport</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link" href="#giftlist">Gift List</a>
+        <li class="nav-item waves-light" mdbRippleRadius *ngFor="let link of links">
+          <a class="nav-link" [href]="link.link">{{ link.label }}</a>
         </li>
       </ul>
     </links>
@@ -62,83 +41,18 @@
 <!--Main Navigation-->
 
 <main>
-  <section id="sagai" class="section text-center mb-5">
-    <h2 class="font-bold py-3 mb-3 mt-3">Sagai</h2>
-
-    <div class="card card-cascade wider map-card">
-      <div class="view overlay hm-white-slight">
-        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" [style.height]="'300px'">
-          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-        </agm-map>
-      </div>
-
-      <div class="card-body text-center">
-        <h4 class="card-title">
-          <strong>Saturday 20th January 2018</strong>
-        </h4>
-        <h5 class="indigo-text">
-          <strong>Kanchans Banqueting Suite</strong>
-        </h5>
-        <p class="card-text">53-55 Perth Road
-          <br>Gants Hill
-          <br>Ilford IG2 6BX</p>
-
-        <p class="card-text">11am - 3pm</p>
-
-        <p class="card-text">Parking available at
-          <a href="https://en.parkopedia.co.uk/parking/near/gants-hill-library/" target="_blank">Gants Hill Library</a>
-        </p>
-      </div>
-    </div>
-    <br/>
-  </section>
-
-  <section class="section text-center mb-5" id="venue">
-    <h2 class="font-bold py-3 mb-3 mt-3">Venue</h2>
+  <sam-sagai id="sagai"></sam-sagai>
+  <sam-section id="wedding" label="Wedding">
     <sam-venue></sam-venue>
-  </section>
-
-  <section class="section text-center mb-5" id="friday">
     <h2 class="font-bold py-3 mb-3 mt-3">Friday - Hindu Ceremony</h2>
 
     Guest arrival - 11 am Groom arrival - 11.15
 
-  </section>
-
-  <section class="section text-center mb-5" id="saturday">
     <h2 class="font-bold py-3 mb-3 mt-3">Saturday - Civil Ceremony &amp; Reception</h2>
 
     Guest arrival 2pm Reception and Canapés from 4pm
-
-  </section>
-
-  <section class="section text-center mb-5" id="accommodation">
-    <h2 class="font-bold py-3 mb-3 mt-3">Accommodation</h2>
-
-    <table>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-
-  </section>
-
-  <section class="section text-center mb-5" id="transport">
-    <h2 class="font-bold py-3 mb-3 mt-3">Transport</h2>
-
-    We strongly advise
-  </section>
-
-  <section class="section text-center mb-5" id="giftlist">
-    <h2 class="font-bold py-3 mb-3 mt-3">Gift List</h2>
-
-    The biggest gift to us is your support and presence at our wedding. However, if you wish to buy us a gift, we do have a list at The Wedding Shop. You can view the list and make purchases online at http://www.weddingshop.com/sheenaandmark.
-  </section>
-
-  <!-- <section>
-      <h2 class="font-bold py-3 mb-3">Countdown</h2>
-      <sam-countdown></sam-countdown>
-  </section> -->
+  </sam-section>
+  <sam-accommodation id="accommodation"></sam-accommodation>
+  <sam-transport id="transport"></sam-transport>
+  <sam-gift-list id="giftlist"></sam-gift-list>
 </main>

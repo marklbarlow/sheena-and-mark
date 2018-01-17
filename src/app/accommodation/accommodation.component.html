@@ -1,0 +1,13 @@
+<sam-section label="Accommodation">
+  <p>Being close to Stansted, there are a number of good hotels and B&amp;Bs nearby. Here are some of the closest.
+  </p>
+
+  <table class="table table-striped table-sm">
+    <tr *ngFor="let hotel of hotels">
+      <td>{{ hotel.hotel }}</td>
+      <td>
+        <a [href]="hotel.link" target="_blank">{{ hotel.link }}</a>
+      </td>
+    </tr>
+  </table>
+</sam-section>

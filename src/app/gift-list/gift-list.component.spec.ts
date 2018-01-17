@@ -1,31 +1,30 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import * as stubs from 'testing';
 
-import { VenueComponent } from './venue.component';
+import { GiftListComponent } from './gift-list.component';
 
-describe('VenueComponent', () => {
-  let component: VenueComponent;
-  let fixture: ComponentFixture<VenueComponent>;
+describe('GiftListComponent', () => {
+  let component: GiftListComponent;
+  let fixture: ComponentFixture<GiftListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        VenueComponent,
+        GiftListComponent,
 
-        stubs.AgmMapStubComponent,
-        stubs.AgmMarkerStubComponent,
+        stubs.SectionStubComponent,
       ],
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VenueComponent);
+    fixture = TestBed.createComponent(GiftListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

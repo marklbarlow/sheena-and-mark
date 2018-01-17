@@ -1,0 +1,13 @@
+<sam-section label="Transport">
+  <p>Parklands is lovely and secluded but that can make taxis harder to come by. There are several taxi companies that serve
+    Quendon. We’d strongly recommend booking in advance to avoid the risk of being stuck without a ride home at the end of
+    the night.
+  </p>
+
+  <table class="table table-striped table-sm">
+    <tr *ngFor="let taxi of taxis">
+      <td>{{ taxi.name }}</td>
+      <td>{{ taxi.number }}</td>
+    </tr>
+  </table>
+</sam-section>

@@ -3,21 +3,17 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule, Routes } from '@angular/router';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MomentModule } from 'angular2-moment';
 
+import { AccommodationComponent } from './accommodation/accommodation.component';
 import { AppComponent } from './app.component';
 import { CountdownComponent } from './countdown/countdown.component';
-import { HomeComponent } from './home/home.component';
+import { GiftListComponent } from './gift-list/gift-list.component';
+import { SagaiComponent } from './sagai/sagai.component';
+import { SectionComponent } from './section/section.component';
+import { TransportComponent } from './transport/transport.component';
 import { VenueComponent } from './venue/venue.component';
-
-const routes: Routes = [
-  // { path: '', redirectTo: '/venue', pathMatch: 'full' },
-  // { path: 'venue', component: VenueComponent },
-  { path: '', component: HomeComponent },
-  { path: 'countdown', component: CountdownComponent }
-];
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -25,7 +21,11 @@ const routes: Routes = [
     AppComponent,
     VenueComponent,
     CountdownComponent,
-    HomeComponent,
+    SectionComponent,
+    TransportComponent,
+    AccommodationComponent,
+    SagaiComponent,
+    GiftListComponent,
   ],
   imports: [
     AgmCoreModule.forRoot({
@@ -34,7 +34,6 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    RouterModule.forRoot(routes),
     MDBBootstrapModule.forRoot(),
     MomentModule,
   ],

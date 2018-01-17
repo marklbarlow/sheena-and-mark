@@ -1,16 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import * as stubs from 'testing';
 
-import { VenueComponent } from './venue.component';
+import { SagaiComponent } from './sagai.component';
 
-describe('VenueComponent', () => {
-  let component: VenueComponent;
-  let fixture: ComponentFixture<VenueComponent>;
+describe('SagaiComponent', () => {
+  let component: SagaiComponent;
+  let fixture: ComponentFixture<SagaiComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        VenueComponent,
+        SagaiComponent,
 
         stubs.AgmMapStubComponent,
         stubs.AgmMarkerStubComponent,
@@ -20,12 +20,12 @@ describe('VenueComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VenueComponent);
+    fixture = TestBed.createComponent(SagaiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
