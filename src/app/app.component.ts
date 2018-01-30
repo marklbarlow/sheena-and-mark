@@ -9,8 +9,8 @@ import { WOW } from 'wowjs/dist/wow.min';
 export class AppComponent implements AfterViewInit {
 
   public links = [
-    { label: 'Home', link: '#' },
-    { label: 'Wedding', link: '#wedding' },
+    { label: 'Venue', link: '#venue' },
+    { label: 'Ceremonies', link: '#ceremonies' },
     { label: 'Accommodation', link: '#accommodation' },
     { label: 'Transport', link: '#transport' },
     { label: 'Gift List', link: '#giftlist' },

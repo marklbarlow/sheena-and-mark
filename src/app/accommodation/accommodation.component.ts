@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AccommodationComponent {
 
   public hotels = [
-    { hotel: 'Travelodge, Bishop’s Stortford', link: 'https://www.travelodge.co.uk/hotels/423/Stansted-Bishops-Stortford-hotel' },
+    { hotel: 'Travelodge, Bishop’s Stortford', link: 'https://www.travelodge.co.uk' },
     { hotel: 'The Cricketers, Clavering', link: 'http://www.thecricketers.co.uk' },
     { hotel: 'Saffron Hotel, Saffron Waldon', link: 'http://www.saffron-hotel.co.uk' },
     { hotel: 'The Millhouse, Stansted Mountfitchet', link: 'http://www.themillhousestansted.com' },

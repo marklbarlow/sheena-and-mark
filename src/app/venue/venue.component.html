@@ -1,34 +1,47 @@
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" [style.height]="'300px'">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-  </agm-map>
+<sam-section label="Venue">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <img class="img-fluid" src="assets/parklands.jpg" alt="Parklands">
 
-<p>Parklands
-  <br>Quendon Hall
-  <br>Quendon
-  <br>Essex
-  <br>CB11 3XN
-</p>
+        <div class="card-body">
+          <h5 class="card-title">Location</h5>
+          <p class="card-text">We will be celebrating our wedding at the beautiful Parklands, Quendon Hall in the village of Quendon.</p>
+          <p class="card-text">Quendon is located north of Bishop’s Stortford, about 15 minutes from Stansted airport. </p>
 
-<img src="assets/parklands.jpg" alt="Parklands">
+          <p class="card-text">Parklands
+            <br>Quendon Hall
+            <br>Quendon
+            <br>Essex
+            <br>CB11 3XN</p>
 
-<p><a href="http://www.quendonhall.co.uk" target="_blank">www.quendonhall.co.uk</a></p>
+          <div class="card-text">
+            <a href="http://www.quendonhall.co.uk" target="_blank">www.quendonhall.co.uk</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<p>
-  <strong>By road</strong>
-</p>
+    <div class="col-md-6">
+      <div class="card">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" [style.height]="'300px'">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
 
-<p>Parklands is located north of Bishop’s Stortford. If travelling on the A120, exit at the roundabout signposted B1383 Newport.
-  Then take directions via Stansted Mountfitchet above.</p>
+        <div class="card-body">
+          <h5 class="card-title">Directions</h5>
 
-<p>
-  <strong>By train</strong>
-</p>
+          <p class="card-text">
+            <strong>By car:</strong> From the M11, take the A120 westbound and exit at the roundabout signposted B1383 Newport. Then
+            take directions via Stansted Mountfitchet. After driving through the village of Quendon the entrance to Parklands
+            is immediately on your left as you exit the village. There is plenty of parking on the grounds.</p>
 
-<p>Newport is the nearest station to Parklands, Quendon Hall, about 2 miles away, from where a taxi will take about 5 minutes
-  to reach the venue. The station is on the London (Liverpool Street) to Cambridge line.</p>
-
-<p>
-  <strong>By air</strong>
-</p>
-
-<p>Parklands is about 15 minutes from Stansted airport</p>
+          <p class="card-text">
+            <strong>By rail:</strong> Newport is the nearest station to Parklands, Quendon Hall, about 2 miles away. A taxi will
+            take about 5 minutes to reach the venue. The station is on the London (Liverpool Street) to Cambridge line.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</sam-section>
